@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {UsuariosService} from "../../services/usuarios.service";
-import {Usuario} from "../../models/usuarios";
-import {Router} from "@angular/router";
+import {Usuarios} from "../../models/usuarios";
 
 @Component({
   selector: 'app-usuarios',
@@ -10,9 +9,9 @@ import {Router} from "@angular/router";
 })
 export class UsuariosComponent implements OnInit {
 
-  public usuarios: Usuario[] = []
+  public usuarios: Usuarios[] = []
 
-  constructor( private usuariosService: UsuariosService, private router: Router ) { }
+  constructor( private usuariosService: UsuariosService ) { }
 
   ngOnInit(): void {
 

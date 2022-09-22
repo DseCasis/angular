@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import {UsuariosService} from "../../services/usuarios.service";
-import {Usuario} from "../../models/usuarios";
+import {Usuarios} from "../../models/usuarios";
 
 @Component({
-  selector: 'app-filtro',
-  templateUrl: './filtro.component.html',
-  styleUrls: ['./filtro.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class FiltroComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
-  public usuarios: Usuario[] = []
+  public usuarios: Usuarios[] = []
 
   constructor(private usuariosService: UsuariosService) { }
 

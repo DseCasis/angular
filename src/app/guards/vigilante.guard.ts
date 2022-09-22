@@ -13,7 +13,7 @@ export class VigilanteGuard implements CanActivate {
     state: RouterStateSnapshot): boolean {
 
     const hora = new Date().getHours();
-    if (hora >=17){
+    if (hora >=18){
       this.router.navigate(['user/login']);
       return false;
     }
